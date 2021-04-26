@@ -1,5 +1,6 @@
 .root {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -7,13 +8,32 @@
 }
 
 .imageContainer {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 300px;
   width: 30%;
   height: 50%;
+  background-color: rgba(226, 64, 237, 0.1);
   border: 1px solid rgba(226, 64, 237, 0.45);
   border-radius: 5px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 4px;
+  margin-top: 10px;
+}
+
+.imagePreview {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.progressBarContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  bottom: 10%;
 }
