@@ -5,8 +5,8 @@ const Home = () => {
   return (
     <div className={s.root}>
       <div className={s.imageContainer}>
-        <ProgressBar progress={28} />
-      </div>{" "}
+        <ProgressBar progress={69} />
+      </div>
     </div>
   );
 };
