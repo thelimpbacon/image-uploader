@@ -23,12 +23,6 @@
   margin-top: 10px;
 }
 
-.imagePreview {
-  object-fit: contain;
-  height: 100%;
-  width: 100%;
-}
-
 .progressBarContainer {
   position: absolute;
   display: flex;
@@ -36,4 +30,8 @@
   align-items: center;
   width: 100%;
   bottom: 10%;
+}
+
+.url {
+  text-align: center;
 }
