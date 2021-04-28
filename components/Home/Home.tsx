@@ -10,7 +10,7 @@ const Home = () => {
   const [url, setUrl] = useState<string>("");
   const [{ progress, loading, done }, uploadImage] = useUpload({
     url: process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_URL,
-    onComplete: ({ response }) => setUrl(response.url),
+    onComplete: ({ response }) => setUrl(response.secure_url),
     onError: () => {
       setPreview(null);
       alert("There was an error.");
