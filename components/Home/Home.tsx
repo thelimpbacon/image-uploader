@@ -37,7 +37,11 @@ const Home = () => {
         hidden
       />
 
-      <button onClick={() => imageInputRef.current.click()} disabled={loading}>
+      <button
+        className={s.button}
+        onClick={() => imageInputRef.current.click()}
+        disabled={loading}
+      >
         Upload image
       </button>
 
