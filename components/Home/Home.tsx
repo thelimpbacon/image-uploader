@@ -30,6 +30,11 @@ const Home = () => {
 
   return (
     <div className={s.root}>
+      <div className={s.description}>
+        Project that uses different react hooks, XHR, cloudinary and react
+        spring{" "}
+      </div>
+
       <input
         ref={imageInputRef}
         type="file"
